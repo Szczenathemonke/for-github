@@ -5,12 +5,13 @@
     font-style: normal;
 
 }
+
 html{
     max-width: 80vw;
        
 }
 button {
-    font-family: 'robotomedium' sans-serif;
+    font-family: 'robotomedium', sans-serif;
     text-transform: uppercase;
     background-color: transparent;
     color: blueviolet;
