@@ -1,7 +1,16 @@
-p{
-    max-width: 50vw;
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../roboto_medium_macroman/Roboto-Medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html{
+    max-width: 80vw;
+       
 }
 button {
+    font-family: 'robotomedium' sans-serif;
     text-transform: uppercase;
     background-color: transparent;
     color: blueviolet;
