@@ -45,8 +45,8 @@ body{
 .main{
     grid-area: "main";
     display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(350px, 20%) );
-    
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    justify-content: space-between;
     
         
     gap: 30px;
@@ -61,28 +61,35 @@ body{
 }
 .card{
     border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(50px, 100%) );;
-    grid-template-rows: repeat( auto-fill, minmax(50px, 80%) );;
-    grid-area:
-        ". card_img ."
-        "card_title . card_icon"
-        "card_author . . ";
+    align-content: stretch;
 
-    
+        
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(50px, 50px));
+    justify-content: space-between;
+        
 }
 .card_img{
-    justify-self: center;
+    max-width: 350px;
 }
+
+/*     
+
 .card_title{
+    grid-column: 1 ;
+    grid-row: 2;
     justify-self: left;
 }
 .card_icon{
+    grid-column: 3  ;
+    grid-row: 2;
     justify-self: right;
 }
 .card_author{
+    grid-column: 1 ;
+    grid-row: 3;
     justify-self: left;
-}
+} */
 
 img{
     min-width: 100%;
