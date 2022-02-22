@@ -38,6 +38,7 @@ body{
 .item1-index{
     max-height: 50px;
 
+
 }
 .item1-menu{
     display:flex;
@@ -168,13 +169,13 @@ body{
     grid-area: "footer";
     position: sticky;
     bottom: 0px;
-    
+    border-top: 1px solid rgb(44, 43, 43);
 
 }
 
 
 .item1, .item2, .item3{
-    border: 1px solid black;
+    border-bottom: 1px solid rgb(44, 43, 43);
     background-color: white;
     padding: 0px;
     z-index: 2;
@@ -191,7 +192,7 @@ body{
         
     gap: 30px;
     
-    border: 1px solid red;
+    /* border: 1px solid red; */
     min-height: 100vh;
     
     list-style: none;
