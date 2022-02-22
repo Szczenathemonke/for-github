@@ -6,24 +6,36 @@
         <link href="assets/Kaz-logo.png" rel="Kaz-logo">
     </head>
     <body>
+        
         <div class="container">
         <header class="item1">
-                <div class="item1-index"><a href="index.html"><img class="Kaz" src="assets/Kaz-logo.png"></a></div>
-                             
+            
+            
+            
+            
+            <!-- start media query header -->
+            <button onclick="myFunction()" class="item1-btn">klik</button>   
+            <div class="item1-menu2" id="item1-menu2">
+                <button onclick="myFunction()" class="item1-menu2">klik</button>
+                <div class="header-site2">strona1</div>
+                <div class="header-site2">strona2</div>
+                <div class="header-site2">strona3</div>
+                <div class="header-login2">LogIn</div>
+                <div class="header-lobby2">MichałSite</div>
+            </div>
+            <!-- end media query header -->                  
+            <div class="item1-index"><a href="index.html"><img class="Kaz" src="assets/Kaz-logo.png"></a></div>          
+            <div class="item1-menu">
+
+                <div class="header-site">strona1</div>
+                <div class="header-site">strona2</div>
+                <div class="header-site">strona3</div>             
+            </div>
                 
                 
-                    <button onclick="myFunction()" class="item1-btn">klik</button>   
-                    <div class="item1-menu" id="item1-menu">
-                        <button onclick="myFunction()" class="item1-btn">klik</button>
-                        <div class="header-site">strona1</div>
-                        <div class="header-site">strona2</div>
-                        <div class="header-site">strona3</div>
-                        <div class="header-login2">LogIn</div>
-                        <div class="header-lobby2">MichałSite</div>
-                    </div>
                     
-                <div class="header-login">LogIn</div>
-                <div class="header-lobby">MichałSite</div>
+            <div class="header-login">LogIn</div>
+            <div class="header-lobby">MichałSite</div>
                 
                 
                 
@@ -43,6 +55,7 @@
                 <li class="flt-list"><button class="flt-btn">Docent</button></li>
                 <li class="flt-list"><button class="flt-btn">Żbik</button></li>
             </ul>
+            <!--start media query nav -->
             <select class="item2-filter2">
                 <option class="flt-btn">Siema</option>
                 <option class="flt-btn">Znowu</option>
@@ -51,6 +64,7 @@
                 <option class="flt-btn">Żbik</option>
                 
             </select>
+            <!--end media query nav -->
             <div class="item2-cat">
                 <button>1</button>
                 <button>2</button>
@@ -60,7 +74,7 @@
             </div>
             <div class="item2-sort">sortuj</div>
         </div>
-            
+           
         <ul class="main">
             <li >
                 <div class="card_img"><img class="img" src="https://source.unsplash.com/random/320x200/?img=1"></div>
@@ -238,7 +252,7 @@
 
         <script>
             function myFunction() {
-                var x = document.getElementById("item1-menu");
+                var x = document.getElementById("item1-menu2");
                     if (x.style.display === "none") {
                     x.style.display = "flex";
                     } else {
