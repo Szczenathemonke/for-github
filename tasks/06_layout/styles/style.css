@@ -154,12 +154,30 @@ body{
     display: none;
 }
 
-.item2-cat{
+.item2-cat-bar{
     justify-self: left;
     padding: 20px;
+    display: flex;
+    gap:30px;
     
-    
-}
+    }
+    .disabled{
+        color: gray;
+        border-bottom: 1px dashed gray;
+        width: fit-content;
+        text-shadow: 1px 1px 5px gray;
+      }
+               
+      .drop-content{
+        background-color: white;
+        position:absolute;
+        display:none;
+        border: 1px solid blue;  
+        flex-flow: column wrap;
+        max-width: 200px;
+        padding: 10px;
+      }
+
 .item2-sort{
     justify-self: right;
     padding: 20px;
@@ -324,8 +342,9 @@ img{
     }   
            
 }
+
 @media (max-width:605px){
-    .item2-cat, .item2-sort{
+    .item2-cat-bar, .item2-sort{
         display: none;
     }
     .item2{

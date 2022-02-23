@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <link href="styles/style.css" rel="stylesheet">
+        <script src="scripts/scripts.js" defer></script>
         <link href="assets/Kaz-logo.png" rel="Kaz-logo">
+
     </head>
     <body>
         
@@ -74,12 +76,57 @@
                 
             </select>
             <!--end media query nav -->
-            <div class="item2-cat">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
+            <div class="item2-cat-bar">
+                <div class="dropdown">
+                        <button onclick="dropcat1()" class="drop-btn">Sos</button>
+                        <div class="drop-content" id="drop-item2-cat1">  
+                            <div class="disabled"> wybierz sosy</div>
+                            <a href="#">Beszamel</a>
+                            <a href="#">Bolognese</a>
+                            <a href="#">Myśliwski</a>
+                            <a href="#">Szmal</a>  
+                        </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat2()" class="drop-btn">Ciuchy</button>
+                            <div class="drop-content" id="drop-item2-cat2">  
+                                <div class="disabled"> wybierz sosy</div>
+                                <a href="#">Beszamel</a>
+                                <a href="#">Bolognese</a>
+                                <a href="#">Myśliwski</a>
+                                <a href="#">Szmal</a>  
+                            </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat3()" class="drop-btn">Borciuchy</button>
+                            <div class="drop-content" id="drop-item2-cat3">  
+                                <div class="disabled"> wybierz sosy</div>
+                                <a href="#">Beszamel</a>
+                                <a href="#">Bolognese</a>
+                                <a href="#">Myśliwski</a>
+                                <a href="#">Szmal</a>  
+                            </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat4()" class="drop-btn">Ruchy</button>
+                            <div class="drop-content" id="drop-item2-cat4">  
+                                <div class="disabled"> wybierz sosy</div>
+                                <a href="#">Beszamel</a>
+                                <a href="#">Bolognese</a>
+                                <a href="#">Myśliwski</a>
+                                <a href="#">Szmal</a>  
+                            </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat5()" class="drop-btn">puchy</button>
+                            <div class="drop-content" id="drop-item2-cat5">  
+                                <div class="disabled"> wybierz sosy</div>
+                                <a href="#">Beszamel</a>
+                                <a href="#">Bolognese</a>
+                                <a href="#">Myśliwski</a>
+                                <a href="#">Szmal</a>  
+                            </div>
+                </div>                
             </div>
             <div class="item2-sort">sortuj</div>
         </div>
@@ -259,19 +306,6 @@
             
 
         </div>
-        
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("item1-menu2");
-                    if (x.style.display === "none") {
-                    x.style.display = "flex";
-                    } else {
-                    x.style.display = "none";
-                    }    
-            }
-            
-            
-            </script>
+                
     </body>
 </html>
