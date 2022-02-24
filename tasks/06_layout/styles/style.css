@@ -1,9 +1,34 @@
+@font-face{
+    font-family: "Cormorant-Regular";
+    src: url('../fonts/cormorant_regular_macroman/Cormorant-Regular-webfont.woff') format('woff');
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Cormorant-button";
+    src: url('../fonts/cormorantunicase_bold_macroman/CormorantUnicase-Bold-webfont.woff') format('woff');
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Cormorant-italic";
+    src: url('../fonts/cormorant_italic_macroman/Cormorant-Italic-webfont.woff') format('woff');
+    font-size: normal;
+    font-weight: normal;
+}
 
 
 body{
     margin:0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+
     
     
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
 }
 
 
@@ -32,7 +57,7 @@ body{
     
       
     column-gap: 10px;
-    border-bottom: 1px solid rgb(44, 43, 43);
+    border-bottom: 0.5px solid rgba(139, 137, 137, 0.575);
     
 }
 .item1-index{
@@ -66,52 +91,69 @@ body{
     top: 55px;
 
     display: grid;
-    grid-template-columns: auto 400px;
+    grid-template-columns: auto 500px;
     grid-template-rows: 100px 63px;   
     justify-items: center;
     align-items: center;
     max-width: 100%;
     
-    border-bottom: 1px solid rgb(44, 43, 43);
-}
-.search{
-    width: 100%;
-    height: 50px;
-    margin-left: 5px;
-    position: relative;
-    right:7px;    
-    border: none;
-    background-color: transparent;     
-}
-.search:focus{
-    height: 350px;
-    width: 100%;
-    border: none;
-    background-color: white;
-    margin: 0px;
-    padding: 0px;
     
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+    border-bottom: 0.5px solid rgba(139, 137, 137, 0.575);
     
-    
-
-    position: sticky;
 }
 .item2-search{
     justify-self: stretch;
     width: auto;
     height: 50px;
-    padding-left: 4px;
-    padding-right: 0px;
     
-    border:1px solid black;
+    
+    border:0.5px solid black;
+    border-right: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px; 
     margin-left: 30px;
-}
+    
+    
+    font-family: "Cormorant-italic", sans-serif;
+    font-size: 1.5rem;
+    }
+    .search{
+        
+        width: 100%;
+        height: 50px;
+        
+        position: relative;
+        right: 0px;    
+        border: none;
+        padding: 0px;
+        
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        text-align: start;
+        
+    }
+    .search:focus{
+        height: 350px;
+        width: 100%;
+        border: none;
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: sticky;
+    }
+    .search::placeholder {
+        padding: 20px;
+        font-family: "Cormorant-italic", sans-serif;
+        font-size: 1.5rem;
+        
+        
+    }
+    
+    
 .item2-filter1{
     justify-self: stretch;
     width: auto;
@@ -119,30 +161,31 @@ body{
     list-style: none;
     padding: 0px;
     
-    border:1px solid black;
+    border:0.5px solid black;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     margin-right: 30px;
+    background-color: white;
     
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
     justify-content: space-evenly;
     align-items: stretch;    
-        
-}
+    
+    
+    }
     .flt-list{
         display: flex;        
         justify-content: center;
     }
-    .flt-btn{
-        
+    .flt-btn{               
         flex-basis: 50px;
         background-color: transparent;
         border: none;
-        /* border: 1px solid gray; */
-        /* border-radius: 10px; */
+        
     }
+
     .flt-btn:hover{
         background-color: rgb(54, 233, 188);
         transform: color 2s;
@@ -161,6 +204,17 @@ body{
     display: flex;    
     gap:30px;
     overflow: auto;
+    }
+    .drop-btn{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        
+    }
+    .ico16{
+        max-width: 16px;
+        max-height: 16px;
+        
     }
     .disabled{
         color: gray;
@@ -206,14 +260,14 @@ body{
     grid-area: "footer";
     position: sticky;
     bottom: 0px;
-    border-top: 1px solid rgb(44, 43, 43);
+    border-top: 0.2px solid rgb(102, 98, 98);
     
 
 }
 
 
 .item1, .item2, .item3{    
-    background-color: white;
+    background-color: rgb(211, 248, 235);
     padding: 0px;
     z-index: 2;
     
@@ -226,10 +280,10 @@ body{
     grid-template-columns: repeat( auto-fit, minmax(150px, 350px) );
     justify-content:center;
     
+    
         
     gap: 30px;
     
-    /* border: 1px solid red; */
     min-height: 100vh;
     
     list-style: none;
@@ -258,9 +312,24 @@ img{
 .card_img :hover{
     filter: blur(2px) grayscale(69%);
 }
+/* button style */
+.item1-btn, .drop-btn, .sort-btn{
+    width: 100px;
+    height: 1.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:none;
+    transition: border-radius 1s, box-shadow 0.5s;
+  }
+  .item1-btn:hover, .drop-btn:hover, .sort-btn:hover, .item1-btn:focus, .drop-btn:focus, .sort-btn:focus{
+    border-radius: 30px;
+    box-shadow:1px 1px 4px black;
+  }
 
 
 /* media queries */
+
 @media (max-width:100%){
     .header-site {
         display: block;
@@ -292,6 +361,7 @@ img{
     }
     .item1-btn{
         display:inline-block;
+        height: 50px;
 
     }
     .item1-index{
@@ -346,6 +416,13 @@ img{
         margin-right: 30px;
         
         display: flex;
+        
+        
+        padding: 10px;
+        font-family: "Cormorant-italic", sans-serif;
+        font-size: 1.5rem;
+            
+            
         
     }
     .item2-filter2:focus{
