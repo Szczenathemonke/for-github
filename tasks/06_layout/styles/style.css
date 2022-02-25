@@ -204,6 +204,7 @@ button{
     display: flex;    
     gap:30px;
     overflow: auto;
+    flex-wrap: nowrap;
     }
     .drop-btn-content{
         display: flex;    
@@ -226,12 +227,15 @@ button{
       }
                
       .drop-content{
+        display:none;
+        /* zmienia się na flex po wcisnieciu drop-btn */
         background-color: white;
         position: absolute;
         top: 160px;
-        display:none;
-        border: 1px solid blue;  
+        
+        border: 1px solid rgb(168, 168, 168);   
         flex-flow: column wrap;
+        gap: 10px;
         max-width: 200px;
         padding: 10px;
         text-transform: capitalize;
@@ -249,12 +253,13 @@ button{
 
     }
     .sort-content{
+        display:none;
+        /* zmienia się na flex po wcisnieciu drop-btn */
         background-color: white;
         position:absolute;
         bottom: -80px;
-        right:0px;
-        display:none;
-        border: 1px solid blue;  
+        right:0px;        
+        border: 1px solid rgb(168, 168, 168);  
         flex-flow: column wrap;
         max-width: 200px;
         padding: 10px;
@@ -306,20 +311,22 @@ button{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(50px, 50px));
     justify-content: space-between;
-        
-}
+    }
+    .author{
+        color:gray;
+    }
 .card_img{
     min-width: 200px;
+    }
+    .main-content-img{
+        width: 100%;
     
-}
-.main-content-img{
-    width: 100%;
+    }    
+    .card_img :hover{
+        filter: blur(2px) grayscale(69%);
+    }    
 
-}
 
-.card_img :hover{
-    filter: blur(2px) grayscale(69%);
-}
 /* button style */
 .item1-btn, .drop-btn, .sort-btn{
     width: 130px;
