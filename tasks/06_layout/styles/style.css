@@ -200,22 +200,24 @@ button{
 
 .item2-cat-bar{
     justify-self: left;
-    padding: 20px;
+    padding: 10px;
     display: flex;    
     gap:30px;
     overflow: auto;
     }
-    .drop-btn{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
+    .drop-btn-content{
+        display: flex;    
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 10px;
+        text-transform: capitalize;
+        
         
     }
     .ico16{
-        max-width: 16px;
-        max-height: 16px;
+        display: block;  
         
-    }
+      }
     .disabled{
         color: gray;
         border-bottom: 1px dashed gray;
@@ -232,7 +234,9 @@ button{
         flex-flow: column wrap;
         max-width: 200px;
         padding: 10px;
+        text-transform: capitalize;
       }
+      
 
 .item2-sort{
     justify-self: right;
@@ -261,6 +265,8 @@ button{
     position: sticky;
     bottom: 0px;
     border-top: 0.2px solid rgb(102, 98, 98);
+    text-align: center;
+    text-transform: capitalize;  
     
 
 }
@@ -288,11 +294,12 @@ button{
     
     list-style: none;
     padding: 0px;
-    margin: 0px;
+    margin: 10px;
 
 }
 .card{
-    border: 1px solid red;
+    /* border: 1px solid rgb(138, 138, 138); */
+    box-shadow: 1px 1px 3px gray;
     align-content: stretch;
 
         
@@ -302,20 +309,21 @@ button{
         
 }
 .card_img{
-    min-width: 348px;
-    border: 1px solid red;
+    min-width: 200px;
+    
+}
+.main-content-img{
+    width: 100%;
+
 }
 
-img{
-    min-width: 100%;
-}
 .card_img :hover{
     filter: blur(2px) grayscale(69%);
 }
 /* button style */
 .item1-btn, .drop-btn, .sort-btn{
-    width: 100px;
-    height: 1.5rem;
+    width: 130px;
+    height: 30px;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
@@ -326,6 +334,7 @@ img{
     border-radius: 30px;
     box-shadow:1px 1px 4px black;
   }
+  
 
 
 /* media queries */
