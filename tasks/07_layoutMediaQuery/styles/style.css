@@ -202,9 +202,10 @@ button{
     justify-self: left;
     padding: 10px;
     display: flex;    
-    gap:30px;
-    overflow: auto;
+    gap:30px;    
     flex-wrap: nowrap;
+    
+    
     }
     .drop-btn-content{
         display: flex;    
@@ -471,4 +472,29 @@ button{
         "footer";
     }
 }
-
+/* main grid reactive layout breakpoints */
+@media (max-width:1526px){
+    .main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width:1440px){
+    .main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width:1080px){
+    .main{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:768px){
+    .main{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:580px){
+    .main{
+    grid-template-columns: 0.75fr;
+    }
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet">
+        <script src="scripts/scripts.js" defer></script>
+        <link href="assets/Kaz-logo.png" rel="Kaz-logo">
+        <link href="assets/16px-icon/chili-sauce.png" rel="sos">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="item1-menu2" id="item1-menu2">
+                <button onclick="myFunction()" class="item1-btn">klik</button>
+                <div class="header-site2">strona1</div>
+                <div class="header-site2">strona2</div>
+                <div class="header-site2">strona3</div>                 
+                <div class="header-login2">LogIn</div>
+                <div class="header-lobby2">MichalSite</div>
+            </div>    
+
+            <header class="item1">     
+                <button onclick="myFunction()" class="item1-btn">klik</button>                
+                <div class="item1-index"><a href="index.html"><img class="Kaz" src="assets/Kaz-logo.png"></a></div>          
+                <div class="item1-menu">
+                    <div class="header-site">strona1</div>
+                    <div class="header-site">strona2</div>
+                    <div class="header-site">strona3</div>             
+                </div>                
+                <div class="header-login">LogIn</div>
+                <div class="header-lobby">MichałSite</div>                
+            </header>        
+                       
+        <div class="item2">
+            <div class="item2-search"><input class="search" type="text" placeholder="Lorem Ipsum Sos, ciuchy i borciuchy dlatego robie ruchy dlatego nie wybieram sie do puchy "></div>
+            <ul class="item2-filter1">
+                <li class="flt-list"><button class="flt-btn">Siema</button></li>
+                <li class="flt-list"><button class="flt-btn">Znowu</button></li>
+                <li class="flt-list"><button class="flt-btn">Dzwoni</button></li>                
+                <li class="flt-list"><button class="flt-btn">Docent</button></li>
+                <li class="flt-list"><button class="flt-btn">Żbik</button></li>
+            </ul>
+            <!--start media query nav -->
+            <select class="item2-filter2">
+                <option class="flt-btn">Siema</option>
+                <option class="flt-btn">Znowu</option>
+                <option class="flt-btn">Dzwoni</option>                
+                <option class="flt-btn">Docent</option>
+                <option class="flt-btn">Żbik</option>
+                
+            </select>
+            <!--end media query nav -->
+            <div class="item2-cat-bar">
+                <div class="dropdown">
+                        <button onclick="dropcat1()" class="drop-btn">
+                            <div class="drop-btn-content">
+                            <img class='ico16' src='assets/16px-icon/chili-sauce.png'>
+                            <div>Sos</div>    
+                                
+                            </div>
+                        </button>
+                        <div class="drop-content" id="drop-item2-cat1">  
+                            <div class="disabled"> wybierz sosy</div>
+                            <a href="#">Beszamel</a>
+                            <a href="#">Bolognese</a>
+                            <a href="#">Myśliwski</a>
+                            <a href="#">Szmal</a>  
+                        </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat2()" class="drop-btn">
+                                <div class="drop-btn-content">
+                                    <img class='ico16' src='assets/16px-icon/tshirt.png'>
+                                    <div>ciuchy</div> 
+                                </div>                            
+                            </button>
+                            <div class="drop-content" id="drop-item2-cat2">  
+                                <div class="disabled"> wybierz ciuchy</div>
+                                <a href="#">Spodenki do ćpania</a>
+                                <a href="#">jajo wypada</a>
+                                <a href="#">Same badeje</a>
+                                <a href="#">kolorowa kurtka</a>  
+                            </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat3()" class="drop-btn">
+                                <div class="drop-btn-content">
+                                    <img class='ico16' src='assets/16px-icon/couple.png'>
+                                    <div>borciuchy</div> 
+                                </div>   
+                            </button>
+                            <div class="drop-content" id="drop-item2-cat3">  
+                                <div class="disabled"> wybierz borciuchy</div>
+                                <a href="#">Młody G</a>
+                                <a href="#">Młody Gypsy</a>
+                                <a href="#">Belmondzi</a>                                
+                            </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat4()" class="drop-btn">
+                                <div class="drop-btn-content">
+                                    <img class='ico16' src='assets/16px-icon/shoe.png'>
+                                    <div>ruchy</div> 
+                                </div> 
+                            </button>
+                            <div class="drop-content" id="drop-item2-cat4">  
+                                <div class="disabled"> wykonaj ruchy</div>
+                                <a href="#">Zamów sobie Nioki</a>
+                                <a href="#">Do tego eskalopki</a>
+                                <a href="#">Nie słuchaj eska roki</a>
+                                <a href="#">Ejsap roki</a>  
+                            </div>
+                </div>
+                <div class="dropdown">
+                            <button onclick="dropcat5()" class="drop-btn">
+                                <div class="drop-btn-content">
+                                    <img class='ico16' src='assets/16px-icon/jail.png'>
+                                    <div>puchy</div> 
+                                </div>
+                            </button>
+                            <div class="drop-content" id="drop-item2-cat5">  
+                                <div class="disabled"> wybierz sosy</div>
+                                <a href="#">Z kapuchy zrób Bigos</a>
+                                <a href="#">Było thugin</a>
+                                <a href="#">Będzie Prison</a>
+                                <a href="#">Nie wybieraj się</a>  
+                            </div>
+                            
+                </div>                
+            </div>
+            <div class="item2-sort">
+                <div class="dropdown-sort">
+                    <button onclick="dropsort()" class="drop-btn">Sortuj</button>
+                    <div class="sort-content" id="drop-item2-sort">  
+                    <a href="#">Sortuj od A do Z</a>
+                    <a href="#">Sortuj od Kaz do G</a>
+                    <a href="#">Pozdrów Marcina</a>                     
+                </div>
+            </div>
+    </div>
+        </div>
+           
+        <ul class="main">
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=1"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title1</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                    
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=2"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title2</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=3"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title3</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=4"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title4</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=5"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title5</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=6"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title6</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li>
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=7"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title7</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=8"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title8</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=9"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title9</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=10"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title10</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=11"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title11</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=12"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title12</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=13"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title13</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                    
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=14"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title14</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=15"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title15</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=16"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title16</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=17"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title17</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=18"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title18</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li>
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=19"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title19</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=20"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title20</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=21"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title21</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=22"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title22</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=23"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title23</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+            <li >
+                <div class="card_img"><img class="main-content-img" src="https://source.unsplash.com/random/320x200/?img=24"></div>
+                <div class="card">
+                    <div class="detail">
+                        <div class="title">title24</div>
+                        <div class="author">author</div>
+                    </div>
+                    <div class="detail">icon</div>
+                </div>
+                        
+            </li>
+        </ul>
+        <footer class="item3">kaz x marcin 2022
+
+        </footer>
+            
+            
+
+    </div>
+                
+    </body>
+</html>
