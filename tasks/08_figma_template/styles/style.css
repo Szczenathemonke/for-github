@@ -37,16 +37,7 @@ letter-spacing: 0.2px;
 /* second-text-color */
 
 color: #737373;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 35px 0px;
 }
-
 /* Header-13 */
 .header-13{
 display: grid;
@@ -75,7 +66,7 @@ width: 1050px;
 height: 743px;
 left: calc(50% - 1050px/2);
 top: 104px;
-z-index: 2;
+
         }
         .header13-container-main-row{
 /* Auto layout */
@@ -92,16 +83,10 @@ left: calc(50% - 1049px/2);
 top: 80px;
 
 
-/* Inside auto layout */
 
-/* flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 0px;           */
         }
             .header13-container-main-colmd6-img{
-/* col-md-6 */
-/* Auto layout */
+/* col-md-6-text */
 
 display: flex;
 flex-direction: column;
@@ -114,17 +99,9 @@ height: 583px;
 left: calc(50% - 510px/2 + 269.5px);
 top: 0px;
 
-
-/* Inside auto layout */
-
-/* flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 30px; */
             }
                 .header13-container-main-colmd6-mockup{
-/* mockup */
-
+/* mockup */    
 
 position: static;
 width: 471px;
@@ -133,80 +110,55 @@ left: 19.5px;
 top: 0px;
 
 
-/* Inside auto layout */
-
-/* flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 0px;     */
                 }
                     .placeholder{
-position: absolute;
-width: 236.2px;
-height: 504.27px;
-left: 236.4px;
-top: 13.44px;
+                        position: absolute;
+                        width: 236.2px;
+                        height: 504.27px;
+                        left: 236.4px;
+                        top: 13.44px;
+                        
+                        background: #C4C4C4;
+                        border-radius: 35px;
+                        transform: rotate(21.35deg); 
 
-background: url(Boards-Notifications-1.png), #C4C4C4;
-border-radius: 35px;
-transform: rotate(21.35deg);
                     }
                     .iphone-12--product-red-2{
-position: absolute;
-width: 471px;
-height: 583px;
-left: 19.5px;
-top: 0px;
-
-background: url(.png);
+                        position: absolute;
+                        width: 471px;
+                        height: 583px;
+                        left: 19.5px;
+                        top: 0px;
+                        
+                        background: url(.png);
+                        border: 1px solid #000000;
+                        box-sizing: border-box;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     }
             .header13-container-main-colmd6-text{
 /* col-md-6 */
-
-
-/* Auto layout */
-
 display: flex;
-flex-direction: column;
+flex-direction: column-reverse;
 align-items: flex-start;
 padding: 0px;
 
-position: static;
+position: relative;
 width: 509px;
 height: 342px;
-left: calc(50% - 509px/2 - 270px);
-top: 120.5px;
-
-
-/* Inside auto layout
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 30px; */
+gap: 35px;
             }
                 .header13-container-main-row-cta{
 /* cta */
-/* Auto layout */
-
 display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 
 position: static;
-width: 354px;
+width: 349px;
 height: 52px;
 left: 0px;
 top: 290px;
-
-
-/* Inside auto layout
-
-flex: none;
-order: 2;
-flex-grow: 0;
-margin: 35px 0px; */
                 }
                 .button.btn.primary-color.btn-outline.btn-round{
 /* button.btn.primary-color.btn-outline.btn-round */
@@ -365,7 +317,7 @@ width: 1322px;
 height: 91px;
 left: 59px;
 top: 0px;
-z-index: 0;
+
     }
     .header13-container-bg{
         position: absolute;
@@ -376,7 +328,5 @@ z-index: 0;
     }
     
 
-
-
-
-
+    
+    
