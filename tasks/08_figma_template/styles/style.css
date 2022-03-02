@@ -1,0 +1,368 @@
+/* table of content */
+body{
+    /* Desktop */
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: relative;
+width: 1440px;
+height: 4848px;
+
+background: #FFFFFF;
+}
+h4{
+/* h4 */
+
+position: static;
+width: 376px;
+height: 60px;
+left: 0px;
+top: 195px;
+
+/* h4 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+letter-spacing: 0.2px;
+
+/* second-text-color */
+
+color: #737373;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 35px 0px;
+}
+
+/* Header-13 */
+.header-13{
+display: grid;
+grid-template-columns: repeat(12, 60px);
+justify-content: center;
+gap: 30px;
+
+position: relative;
+width: 1440px;
+height: 847px;
+
+background: #FAFAFA;
+
+    }
+    .header13-container-main{
+        /* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 80px 0px;
+
+position: absolute;
+width: 1050px;
+height: 743px;
+left: calc(50% - 1050px/2);
+top: 104px;
+        }
+        .header13-container-main-row{
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 1049px;
+height: 583px;
+left: calc(50% - 1049px/2);
+top: 80px;
+
+
+/* Inside auto layout */
+
+/* flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;           */
+        }
+            .header13-container-main-colmd6-img{
+/* col-md-6 */
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 510px;
+height: 583px;
+left: calc(50% - 510px/2 + 269.5px);
+top: 0px;
+
+
+/* Inside auto layout */
+
+/* flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 30px; */
+            }
+                .header13-container-main-colmd6-mockup{
+/* mockup */
+
+
+position: static;
+width: 471px;
+height: 583px;
+left: 19.5px;
+top: 0px;
+
+
+/* Inside auto layout */
+
+/* flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 0px;     */
+                }
+                    .placeholder{
+position: absolute;
+width: 236.2px;
+height: 504.27px;
+left: 236.4px;
+top: 13.44px;
+
+background: url(Boards-Notifications-1.png), #C4C4C4;
+border-radius: 35px;
+transform: rotate(21.35deg);
+                    }
+                    .iphone-12--product-red-2{
+position: absolute;
+width: 471px;
+height: 583px;
+left: 19.5px;
+top: 0px;
+
+background: url(.png);
+                    }
+            .header13-container-main-colmd6-text{
+/* col-md-6 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 509px;
+height: 342px;
+left: calc(50% - 509px/2 - 270px);
+top: 120.5px;
+
+
+/* Inside auto layout
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 30px; */
+            }
+                .header13-container-main-row-cta{
+/* cta */
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 354px;
+height: 52px;
+left: 0px;
+top: 290px;
+
+
+/* Inside auto layout
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 35px 0px; */
+                }
+                .button.btn.primary-color.btn-outline.btn-round{
+/* button.btn.primary-color.btn-outline.btn-round */
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px 36px;
+
+position: static;
+width: 157px;
+height: 52px;
+left: 197px;
+top: 0px;
+
+/* primary-color */
+
+border: 1px solid #23A6F0;
+box-sizing: border-box;
+border-radius: 37px;
+
+/* Inside auto layout
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 10px;   */
+                }
+                    .button.btn.primary-color.btn-outline.btn-round-text{
+                        position: static;
+                        left: 22.93%;
+                        right: 22.93%;
+                        top: 28.85%;
+                        bottom: 28.85%;
+                        
+                        /* btn-text */
+                        
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 22px;
+                        /* identical to box height, or 157% */
+                        
+                        text-align: center;
+                        letter-spacing: 0.2px;
+                        
+                        /* primary-color */
+                        
+                        color: #23A6F0;
+                        
+                        
+                        /* Inside auto layout */
+                        
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                        margin: 10px 0px;    
+                    }
+                .button.btn.primary-color.btn-round{
+/* button.btn.primary-color.btn-round */
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px 36px;
+
+position: static;
+width: 187px;
+height: 52px;
+left: 0px;
+top: 0px;
+
+/* primary-color */
+
+background: #23A6F0;
+border-radius: 37px;
+
+/* Inside auto layout
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px; */
+                }
+                    .button.btn.primary-color.btn-round-text{
+/* btn-text */
+
+
+position: static;
+left: 19.25%;
+right: 19.25%;
+top: 28.85%;
+bottom: 28.85%;
+
+/* btn-text */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+text-align: center;
+letter-spacing: 0.2px;
+
+/* light-text-color */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+                    }
+            .headline-4{
+                /* h1 #headline.4 */
+                position: static;
+                width: 509px;
+                height: 160px;
+                left: 0px;
+                top: 0px;
+                
+                /* h1 */
+                
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 58px;
+                line-height: 80px;
+                /* or 138% */
+                
+                letter-spacing: 0.2px;
+                
+                /* dark-background-color */
+                
+                color: #252B42;
+                
+                
+                /* Inside auto layout */
+                
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 35px 0px;    
+            }
+    .header13-container-nav{}
+    .header13-container-bg{}
+    
+
+
+
+
+
