@@ -75,6 +75,7 @@ width: 1050px;
 height: 743px;
 left: calc(50% - 1050px/2);
 top: 104px;
+z-index: 2;
         }
         .header13-container-main-row{
 /* Auto layout */
@@ -358,8 +359,21 @@ margin: 10px 0px;
                 flex-grow: 0;
                 margin: 35px 0px;    
             }
-    .header13-container-nav{}
-    .header13-container-bg{}
+    .header13-container-nav{
+position: absolute;
+width: 1322px;
+height: 91px;
+left: 59px;
+top: 0px;
+z-index: 0;
+    }
+    .header13-container-bg{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
     
 
 
