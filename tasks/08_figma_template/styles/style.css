@@ -1,5 +1,3 @@
-/* 3.Nonclass selector properties: body, a, ul */
-/* 4.Header */
 /*/////////////////////////////////////////////////////////////// 
             table of content
                 1.Color palette
@@ -692,7 +690,7 @@ top: 0px;
         padding: 0px;
         gap:30px;
     }
-    .card-outline{
+    .features-card-outline{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -708,14 +706,14 @@ top: 0px;
         box-sizing: border-box;
         border-radius: 5px;
     }
-    .card-feature-outline{
+    .features-card-feature-outline{
         position: static;
         
         height: 24px;
         text-align: center;
         color: var(--text-color)
     }
-    .card-fullcolor{
+    .features-card-fullcolor{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -730,45 +728,13 @@ top: 0px;
         box-sizing: border-box;
         background: var(--primary-color);
     }
-    .card-feature-fullcolor{
+    .features-card-feature-fullcolor{
         position: static;
         
         height: 24px;
         text-align: center;
         color: var(--light-text-color);
         }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 6.testimonals */
 .testimonals-1{
@@ -780,6 +746,39 @@ top: 0px;
     background-color: var(--light-gray-1);
 
 }
+
+
+/* div.testimonals-container
+    div.testimonals-container-row1 
+        div.testimonals-container-colmd4
+        div.testimonals-card-item
+            div.testimonals-card-item-content
+                div.testimonals-card-item-content-frame
+                    img--persona
+                    div.testimonals-card-item-content-persona
+                        a.testimonals-name
+                        h6.testimonals-job
+                h6.
+                div.testimonals-card-item-content-stars
+                    img--star
+
+
+     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 7.content */
 .content-1{
     position: static;
