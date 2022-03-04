@@ -1,4 +1,188 @@
 /* table of content */
+/* 1.Color palette */
+/* 2.Content Text formating */
+/* 3.Nonclass selector properties: body, a, ul */
+/* 4.Header */
+
+
+/* 1. color palette */
+:root{
+    --primary-color: #23A6F0;
+    --secondary-color-1: #40BB15;
+    --secondary-color-2: #3C403D;
+    --background-gradient-1: linear-gradient(270deg, #D71489 -1.04%, #004788 100%);
+    --text-color: #252B42;
+    --second-text-color: #737373;
+    --light-text-color: #FFFFFF;
+    --dark-background-color: #252B42;
+    --light-background-color: #FFFFFF;
+    --hover-color: #2A7CC7;
+    --disabled-element-color: #8EC2F2;
+    --muted-color: #BDBDBD;
+    --success-color: #2DC071;
+    --alert-color: #E77C40;
+    --danger-color: #E74040;
+    --light-gray-1: #FAFAFA;
+    --light-gray-2: #ECECEC;
+
+}
+/* 2.content Text formating */
+h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    /* or 138% */
+    
+    letter-spacing: 0.2px;
+    
+    color: #C4C4C4;
+}
+h2{
+    /* h2 */
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 57px;
+/* identical to box height, or 142% */
+
+letter-spacing: 0.2px;
+
+color: #C4C4C4;
+
+}
+h3{
+/* h3 */
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+letter-spacing: 0.1px;
+
+color: #C4C4C4;
+
+}
+h4{
+/* h4 */
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+letter-spacing: 0.2px;
+
+color: #C4C4C4;
+margin:0px;
+}
+h5{
+    /* h5 */
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+letter-spacing: 0.1px;
+
+color: #C4C4C4;
+}
+h6{
+    /* h6 */
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.2px;
+
+color: #C4C4C4;
+}
+.btn-text{
+/* btn-text */
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+letter-spacing: 0.2px;
+color: #C4C4C4;
+}
+.mobile-menu{
+    /* mobile-menu */
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 45px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.2px;
+
+color: #C4C4C4;
+
+}
+p{
+/* paragraph */
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+letter-spacing: 0.2px;
+
+color: #C4C4C4;
+}
+li{
+    /* list */
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.2px;
+
+color: #C4C4C4;
+
+}
+.link{
+/* link */
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.2px;
+
+color: #C4C4C4;
+}
+/* 3. nonclass selector properties: body, a, ul */
 body{
     /* Desktop */
 /* Auto layout */
@@ -18,7 +202,7 @@ margin: 0px;
 
 }
 a{
-    /* a fonntstyle */
+    /* a fontstyle */
 font-family: Montserrat;
 font-style: normal;
 font-weight: 600;
@@ -31,66 +215,8 @@ ul{
     list-style:none;
     margin: 0px;
 }
-h1{
-    /* h1 */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 58px;
-line-height: 80px;
-/* or 138% */
-
-letter-spacing: 0.2px;
-
-/* dark-background-color */
-
-color: #252B42;
-margin: 0px;
-}
-h3{
-    /* h3 */
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 32px;
-/* identical to box height, or 133% */
-
-letter-spacing: 0.1px;
-
-/* text-color */
-
-color: #252B42;
-margin: 0px;
-}
-h4{
-/* h4 */
-
-position: static;
-width: 376px;
-height: 60px;
-left: 0px;
-top: 195px;
-
-/* h4 */
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-/* or 150% */
-
-letter-spacing: 0.2px;
-
-/* second-text-color */
-
-color: #737373;
-margin: 0px;
-}
-/* Header-13 */
+/* 4.Header */
 .header-13{
 display: grid;
 grid-template-columns: repeat(12, 60px);
@@ -195,6 +321,7 @@ display: flex;
 flex-direction: column-reverse;
 align-items: flex-start;
 padding: 0px;
+justify-content: space-between;
 
 position: relative;
 width: 509px;
@@ -222,7 +349,7 @@ gap:10px;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 15px 36px;
+padding: 15px 34px;
 
 position: static;
 width: 157px;
@@ -276,7 +403,7 @@ margin: 0px 10px;   */
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 15px 36px;
+padding: 15px 34px;
 
 position: static;
 width: 187px;
@@ -332,22 +459,11 @@ margin:0px;
                 height: 160px;
                 left: 0px;
                 top: 0px;
-                
-                /* h1 */
-                
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 800;
-                font-size: 58px;
-                line-height: 80px;
-                /* or 138% */
-                
-                letter-spacing: 0.2px;
-                
+                               
                 /* dark-background-color */
                 
                 color: #252B42;
-                
+                margin:0px;
                 
                  
             }
@@ -496,7 +612,7 @@ position: absolute;
 width: 187px;
 height: 58px;
 left: calc(50% - 187px/2 - 431.5px);
-top: calc(50% - 58px/2 + 0.5px);
+
 
             }
             .brand{
