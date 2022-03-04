@@ -1,8 +1,20 @@
-/* table of content */
-/* 1.Color palette */
-/* 2.Content Text formating */
 /* 3.Nonclass selector properties: body, a, ul */
 /* 4.Header */
+/*/////////////////////////////////////////////////////////////// 
+            table of content
+                1.Color palette
+                2.Content Text formating
+                3.Nonclass selector properties: body, a, ul
+                4.Header
+                5.features
+                6.testimonals
+                7.content
+                8.pricing
+                9.contact
+                10.footer 
+            
+//////////////////////////////////////////////////////////////// */
+ 
 
 
 /* 1. color palette */
@@ -36,8 +48,7 @@ h1{
     /* or 138% */
     
     letter-spacing: 0.2px;
-    
-    color: #C4C4C4;
+    margin:0px;
 }
 h2{
     /* h2 */
@@ -49,8 +60,7 @@ line-height: 57px;
 /* identical to box height, or 142% */
 
 letter-spacing: 0.2px;
-
-color: #C4C4C4;
+margin:0px;
 
 }
 h3{
@@ -65,8 +75,7 @@ line-height: 32px;
 /* or 133% */
 
 letter-spacing: 0.1px;
-
-color: #C4C4C4;
+margin:0px;
 
 }
 h4{
@@ -81,8 +90,6 @@ line-height: 30px;
 /* or 150% */
 
 letter-spacing: 0.2px;
-
-color: #C4C4C4;
 margin:0px;
 }
 h5{
@@ -95,8 +102,7 @@ line-height: 24px;
 /* or 150% */
 
 letter-spacing: 0.1px;
-
-color: #C4C4C4;
+margin:0px;
 }
 h6{
     /* h6 */
@@ -108,8 +114,7 @@ line-height: 24px;
 /* or 171% */
 
 letter-spacing: 0.2px;
-
-color: #C4C4C4;
+margin:0px;
 }
 .btn-text{
 /* btn-text */
@@ -120,7 +125,7 @@ font-size: 14px;
 line-height: 22px;
 /* or 157% */
 letter-spacing: 0.2px;
-color: #C4C4C4;
+margin:0px;
 }
 .mobile-menu{
     /* mobile-menu */
@@ -130,11 +135,8 @@ font-weight: normal;
 font-size: 30px;
 line-height: 45px;
 /* identical to box height, or 150% */
-
 letter-spacing: 0.2px;
-
-color: #C4C4C4;
-
+margin:0px;
 }
 p{
 /* paragraph */
@@ -148,8 +150,7 @@ line-height: 20px;
 /* or 143% */
 
 letter-spacing: 0.2px;
-
-color: #C4C4C4;
+margin:0px;
 }
 li{
     /* list */
@@ -163,8 +164,7 @@ line-height: 30px;
 /* identical to box height, or 150% */
 
 letter-spacing: 0.2px;
-
-color: #C4C4C4;
+margin:0px;
 
 }
 .link{
@@ -180,10 +180,13 @@ line-height: 24px;
 
 letter-spacing: 0.2px;
 
-color: #C4C4C4;
+margin:0px;
+}
+h1, h2, h3, h4, h5, h6, p, .btn-text, .mobile-menu{
+    color: #C4C4C4;
 }
 /* 3. nonclass selector properties: body, a, ul */
-body{
+.desktop{
     /* Desktop */
 /* Auto layout */
 
@@ -226,6 +229,8 @@ gap: 30px;
 position: relative;
 width: 1440px;
 height: 847px;
+
+
 
 background: #FAFAFA;
 
@@ -461,9 +466,8 @@ margin:0px;
                 top: 0px;
                                
                 /* dark-background-color */
+                color:var(--text-color)
                 
-                color: #252B42;
-                margin:0px;
                 
                  
             }
@@ -483,16 +487,22 @@ height: 91px;
 left: calc(50% - 1322px/2);
 top: 0px;
 
-
-
+display:grid;
+width: 1322px;
+height: 91px;
+grid-template-columns: 136px 187px 41px 815px 119px 24px;
+grid-template-areas:
+  ". brand . nav . tog";
+align-items: center;
         }
         .navbar-collapse{
             /* collapse navbar-collapse */
-position: absolute;
-width: 815px;
-height: 58px;
-left: calc(50% - 815px/2 + 110.5px);
-top: 16px;
+            align-self:center;
+            grid-area: nav;
+            position: absolute;
+            width: 815px;
+            height: 58px;
+            
             }
             .navbar-list{
 display: flex;
@@ -585,19 +595,13 @@ top: calc(50% - 52px/2);
                     color: #FFFFFF;
                      
                 }
-                
-
-                
-                         
         .navbar-toggler{
-
-/* navbar-toggler */
-position: absolute;
-width: 24px;
-height: 13.71px;
-left: 1298px;
-top: 39px;
-
+             /* navbar-toggler */
+             align-self: center;
+             grid-area: tog;
+             position: absolute;
+             width: 24px;
+             height: 13.71px;
             }
             .toggler{
                 position: absolute;
@@ -608,33 +612,25 @@ top: 0px;
             }
         .navbar-brand{
             /* navbar-brand */
-position: absolute;
-width: 187px;
-height: 58px;
-left: calc(50% - 187px/2 - 431.5px);
-
-
+            align-self: center;
+            grid-area: brand ;
+            position: absolute;
+            width: 187px;
+            height: 58px;
+            
             }
             .brand{
             /* BrandName */
-position: absolute;
-width: 145px;
-height: 32px;
-left: 0px;
-top: 13px;
+            position: absolute;
+            width: 145px;
+            height: 32px;
+            left: 0px;
+            top: 13px;
+
+            color:var(--text-color);
+            margin:0px;
+
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
     .header13-container-bg{
         position: absolute;
@@ -652,7 +648,179 @@ top: 13px;
         
         
     }
-    
+/* 5.features */
+.features-5{
+    position: static;
+    width: 1440px;
+    height: 641px;
+    left: 0px;
+    top: 847px;
+    background-color: var(--light-background-color);    
+}
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 160px 0px;
+        gap:80px;
+    }
+    .features-container-row1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        
+    }
+    .features-container-row1-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        text-align: center;
+        gap:10px;
+                    
+    }
+    .feature-section1{        
+        color: var(--text-color)
+    }
+    .features-container-row2{
+        position: static;
+              
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap:30px;
+    }
+    .card-outline{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 40px;
+        gap:10px;
+        
+        position: static;
+        width: 325px;
+        height: 133.53px;
+                
+        background: #FAFAFA;
+        border: 1px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .card-feature-outline{
+        position: static;
+        
+        height: 24px;
+        text-align: center;
+        color: var(--text-color)
+    }
+    .card-fullcolor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 40px;
+        gap:10px;
+        
+        position: static;
+        width: 325px;
+        height: 133.53px;
+
+        border-radius: 5px;
+        box-sizing: border-box;
+        background: var(--primary-color);
+    }
+    .card-feature-fullcolor{
+        position: static;
+        
+        height: 24px;
+        text-align: center;
+        color: var(--light-text-color);
+        }
 
     
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 6.testimonals */
+.testimonals-1{
+    position: static;
+    width: 1440px;
+    height: 655px;
+    left: 0px;
+    top: 1488px;
+    background-color: var(--light-gray-1);
+
+}
+/* 7.content */
+.content-1{
+    position: static;
+    width: 1440px;
+    height: 879px;
+    left: 0px;
+    top: 2143px;
+    background-color: var(--light-gray-1);
+}
+/* 8.pricing */
+.pricing-4{
+    position: static;
+    width: 1440px;
+    height: 1155px;
+    left: 0px;
+    top: 3022px;
+    background-color: var(--light-gray-1);
+}
+/* 9.contact */
+.contact-5{
+    position: static;
+    width: 1440px;
+    height: 257px;
+    left: 0px;
+    top: 4177px;
+    background-color: var(--dark-background-color);
+
+}
+/* 10.footer */
+.footer-1{
+    position: static;
+    width: 1440px;
+    height: 414px;
+    left: 0px;
+    top: 4434px;
+    background-color: var(--light-gray-1);
+}   
+
+@media (min-width: 1441px){
+    .desktop{
+        width:100vw;
+        align-items: center;
+    }
+}
