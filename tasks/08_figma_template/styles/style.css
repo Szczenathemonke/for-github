@@ -124,6 +124,7 @@ line-height: 22px;
 /* or 157% */
 letter-spacing: 0.2px;
 margin:0px;
+color: #FFFFFF;
 }
 .mobile-menu{
     /* mobile-menu */
@@ -180,11 +181,14 @@ letter-spacing: 0.2px;
 
 margin:0px;
 }
-h1, h2, h3, h4, h5, h6, p, .btn-text, .mobile-menu{
+h1, h2, h3, h4, h5, h6, p, .mobile-menu{
     color: #C4C4C4;
 }
-/* 3. nonclass selector properties: body, a, ul */
-.desktop{
+/* 3. nonclass selector properties */
+body{
+    scroll-snap-type: mandatory;
+}
+.desktop {
     /* Desktop */
 /* Auto layout */
 
@@ -201,11 +205,9 @@ background: #FFFFFF;
 box-sizing: border-box;
 margin: 0px;
 
-scroll-snap-type: y mandatory;
-
 }
-.header13, .features-5, .testimonals-1{
-    scroll-snap-align: center;
+.header-13, .testimonals-1, .features-5, .content-1 {
+    scroll-snap-align: start;
 }
 a{
     /* a fontstyle */
@@ -892,11 +894,6 @@ top: 0px;
                 position: absolute;
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
             }
-            
-            
-            
-
-
 /* 8.pricing */
 .pricing-4{
     position: static;
@@ -906,6 +903,90 @@ top: 0px;
     top: 3022px;
     background-color: var(--light-gray-1);
 }
+    .pricing-container{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:80px;
+    padding: 112px 0px;
+    }
+    .content-row2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:31px;
+    }
+    .colmd4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    min-width: 328px;
+    min-height: 744px;
+    
+    }
+    .pricing-card-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 40px;
+        gap: 35px;
+
+        box-sizing: border-box;
+        border: 1px solid #DEDEDE;
+        background: #FFFFFF;
+    }
+    .pricing-pricecontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .text-PrimaryColor{
+        color:var(--primary-color)
+    }
+    .text-DisabledElementColor{
+        color:var(--disabled-element-color)
+    }
+    .feature-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .feature-item{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap:10px;
+
+        text-align: left;
+    }
+    .textColor{
+        color: var(--text-color);
+    }
+    .text-secondaryText{
+        color:var(--second-text-color)
+    }
+    .pricing-Btn-primaryColor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 40px;
+
+        background: var(--primary-color);
+        border: none;
+        border-radius: 5px;
+    }
+    /* .highlight-circle-NEW{
+        position: absolute;
+        top:0px;
+        left: calc(50% - 90px/2 + 102px)
+    } */
+
+
+    
+
 /* 9.contact */
 .contact-5{
     position: static;
@@ -925,6 +1006,12 @@ top: 0px;
     top: 4434px;
     background-color: var(--light-gray-1);
 }   
+
+
+/* fix - button text i formatowanie button (round/zwykly/outline)
+        row colmd3 colmd4 zunifikować formatowanie - bez klas dla kazdej sekcji
+        feature-selection zunifikować formatowanie - same */
+
 
 @media (min-width: 1441px){
     .desktop{
