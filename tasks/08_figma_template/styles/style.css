@@ -201,6 +201,11 @@ background: #FFFFFF;
 box-sizing: border-box;
 margin: 0px;
 
+scroll-snap-type: y mandatory;
+
+}
+.header13, .features-5, .testimonals-1{
+    scroll-snap-align: center;
 }
 a{
     /* a fontstyle */
@@ -745,39 +750,83 @@ top: 0px;
     top: 1488px;
     background-color: var(--light-gray-1);
 
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    }
+    .testimonals-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 112px 0px;
+        gap: 80px;
 
-/* div.testimonals-container
-    div.testimonals-container-row1 
-        div.testimonals-container-colmd4
-        div.testimonals-card-item
-            div.testimonals-card-item-content
-                div.testimonals-card-item-content-frame
-                    img--persona
-                    div.testimonals-card-item-content-persona
-                        a.testimonals-name
-                        h6.testimonals-job
-                h6.
-                div.testimonals-card-item-content-stars
-                    img--star
+        position: absolute;
+        width: 1050px;
+        max-height: 655.01px;
 
+    }
+    .testimonals-container-row1{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        gap:10px;
 
-     */
+        min-width:607px;
+        min-height:107px;
 
+    }
+    .testimonals-container-row1-content{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        gap:10px;
+        text-align: center;
+    }
+    .testimonals-clientOpinion{
+        color: var(--text-color);
+    }
+    .testimonals-container-row2{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:31px;
+    }
+        .testimonals-container-colmd4{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 35px 30px;
+            max-height: 244px;
+            min-width: 327px;
 
-
-
-
-
-
-
-
-
-
-
-
-
+            border: 1px solid #DEDEDE;
+            box-sizing: border-box;
+            border-radius: 5px;
+            
+        }
+                .testimonals-card-item-content{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap:20px;
+                }
+                    .testimonals-card-item-content-frame{
+                        display:flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap:15px;
+                    }
+                        .testimonals-card-item-content-persona{
+                            display:flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                            /* .testimonals-job{} */
 
 /* 7.content */
 .content-1{
@@ -787,7 +836,67 @@ top: 0px;
     left: 0px;
     top: 2143px;
     background-color: var(--light-gray-1);
-}
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:96px;
+    }
+    .content-row1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+    min-width: 607px;
+    min-height: 107px;
+    }
+
+     
+    
+    .content-row2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-width: 1436px;
+        min-height: 452px;
+        gap: 21px;
+        }
+        .content-item-container{
+            min-width: 291px;
+            min-height: 432px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: end;
+        }
+        .content-colmd3{           
+            position: absolute;   
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            padding: 10px 20px;
+            gap:15px;
+            /* background-image: url("../assets/post1.svg");    */
+            
+            }
+            .content-item-text{
+                color: var(--light-text-color);
+            }
+            .content-item-Bg-filter{
+                min-width: 331px;
+                min-height: 452px;
+                position: absolute;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+            }
+            
+            
+            
+
+
 /* 8.pricing */
 .pricing-4{
     position: static;
