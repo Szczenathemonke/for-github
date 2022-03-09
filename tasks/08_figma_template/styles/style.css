@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6, p, .mobile-menu{
 /* 3. nonclass selector properties */
 html{
     scroll-behavior: smooth;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 .desktop {
     /* Desktop */
@@ -390,8 +390,6 @@ flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap:10px;
-
-
                 }
                 .Btn-primaryColor-outline-Round{
 /* button.btn.primary-color.btn-outline.btn-round */
