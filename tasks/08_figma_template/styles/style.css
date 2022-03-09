@@ -180,13 +180,54 @@ line-height: 24px;
 letter-spacing: 0.2px;
 
 margin:0px;
+color: var(--second-text-color);
+}
+input{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 20px;
+    width: inherit;
+    height: 58px;
+
+    border:1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 5px;  
+    background: #f9f9f9;
+
+}
+input:focus{
+    outline: none;
+
+}
+input::placeholder{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 28px;
+letter-spacing: 0.2px;
+
+color: var(--second-text-color);
+}
+
+.btn-sub-text{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 28px;
+letter-spacing: 0.2px;
+color: var(--light-text-color)
+
 }
 h1, h2, h3, h4, h5, h6, p, .mobile-menu{
     color: #C4C4C4;
 }
 /* 3. nonclass selector properties */
-body{
-    scroll-snap-type: mandatory;
+html{
+    scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 .desktop {
     /* Desktop */
@@ -204,9 +245,10 @@ height: 4848px;
 background: #FFFFFF;
 box-sizing: border-box;
 margin: 0px;
-
+scroll-snap-type: y mandatory;
+overflow-y: scroll;
 }
-.header-13, .testimonals-1, .features-5, .content-1 {
+.header-13, .features-5, .testimonals-1,  .content-1, .pricing-4, .contact-5, .footer-1 {
     scroll-snap-align: start;
 }
 a{
@@ -218,10 +260,13 @@ font-size: 14px;
 line-height: 24px;
 text-align: center;
 letter-spacing: 0.2px;
+text-decoration: none;
+
 }
 ul{
     list-style:none;
     margin: 0px;
+    padding: 0px;
 }
 
 /* 4.Header */
@@ -344,13 +389,9 @@ display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-
-position: static;
-width: 349px;
-height: 52px;
-left: 0px;
-top: 290px;
 gap:10px;
+
+
                 }
                 .Btn-primaryColor-outline-Round{
 /* button.btn.primary-color.btn-outline.btn-round */
@@ -359,13 +400,9 @@ gap:10px;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 15px 34px;
+padding: 15px 36px;
 
-position: static;
-width: 157px;
-height: 52px;
-left: 197px;
-top: 0px;
+
 background-color: transparent;
 
 /* primary-color */
@@ -382,13 +419,6 @@ flex-grow: 0;
 margin: 0px 10px;   */
                 }
                     .Btn-primaryColor-outline-Round-text{
-                        position: static;
-                        left: 22.93%;
-                        right: 22.93%;
-                        top: 28.85%;
-                        bottom: 28.85%;
-                        
-                        /* btn-text */
                         
                         font-family: Montserrat;
                         font-style: normal;
@@ -827,9 +857,7 @@ top: 0px;
                             display:flex;
                             flex-direction: column;
                             align-items: flex-start;
-                        }
-                            /* .testimonals-job{} */
-
+                        }                         
 /* 7.content */
 .content-1{
     position: static;
@@ -853,10 +881,7 @@ top: 0px;
     gap:10px;
     min-width: 607px;
     min-height: 107px;
-    }
-
-     
-    
+    }   
     .content-row2{
         display: flex;
         flex-direction: row;
@@ -968,6 +993,9 @@ top: 0px;
     .text-secondaryText{
         color:var(--second-text-color)
     }
+    .text-lightTextColor{
+        color:var(--light-text-color)
+    }
     .pricing-Btn-primaryColor{
         display: flex;
         flex-direction: column;
@@ -978,14 +1006,19 @@ top: 0px;
         border: none;
         border-radius: 5px;
     }
-    /* .highlight-circle-NEW{
+    .highlight-circle-NEW{
+        display: grid;
         position: absolute;
-        top:0px;
-        left: calc(50% - 90px/2 + 102px)
-    } */
-
-
-    
+        grid-template-columns: repeat(3, 90px);
+        justify-content: center;
+        align-items: flex-start;
+        min-width: 328px;
+        min-height: 744px
+        
+    }
+    .highlight-circle{
+        grid-column: 3/ 4;
+    } 
 
 /* 9.contact */
 .contact-5{
@@ -996,7 +1029,50 @@ top: 0px;
     top: 4177px;
     background-color: var(--dark-background-color);
 
-}
+    }
+    .contact-container{
+        position: absolute;
+        left: calc(50% - 1050px/2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;                
+        padding: 0px;
+        max-width: 1050px;
+        min-height: 257px;
+
+    }
+    .contact-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+        padding: 80px 0px;
+        gap:225px;
+    }
+    .contact-colmd5{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding:0px;        
+    }
+    .contact-input-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 386px;
+        min-height: 58px;
+        padding: 0px;
+    }
+    .btn-sub{
+        position: absolute;
+        right: 0;
+        height: 58px;
+        width: 117px;
+
+        background: #23A6F0;
+        border: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        border-radius: 0px 5px 5px 0px
+    }
 /* 10.footer */
 .footer-1{
     position: static;
@@ -1004,8 +1080,93 @@ top: 0px;
     height: 414px;
     left: 0px;
     top: 4434px;
+    
     background-color: var(--light-gray-1);
-}   
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0px;
+    }
+    .footer-element{
+        min-width: 1440px;     
+        min-height: 338px;
+        background: #FFFFFF;
+        }
+        .footer-element-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0px;
+        gap:30px
+
+        }
+    .footer-element2{
+        min-width: 1440px;
+        min-height: 76px;
+
+        background: #FAFAFA;
+
+        }
+        .footer-element2-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0px;
+
+        }
+        .footer-row1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        padding: 0px;
+        gap:30px;
+
+        min-width: 1046px;
+        
+
+        }
+        .footer-row2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+
+        }
+        .footer-colmd3{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding:0px;
+        gap:20px; 
+        flex-grow: 1;       
+        max-width: 240px;
+        
+        }
+        .footer-colmd6{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+
+        }
+        .footer-colmd4{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap:25px; 
+            
+            /* width: 240px; */
+        }
+        .socialMediaIco{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap:20px;
+        }
+
 
 
 /* fix - button text i formatowanie button (round/zwykly/outline)
