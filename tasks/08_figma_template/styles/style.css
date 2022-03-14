@@ -283,13 +283,13 @@ ul{
 /* 4.Header */
 .header-13{
 display: flex;
-flex-direction: column;
+flex-flow: column wrap;
 align-items: center;
 gap: 30px;
 
 /* position: relative; */
-width: 1440px;
-height: 847px;
+max-width: 1440px;
+min-height: 847px;
 
 background: url('../assets/blob.svg');
 
@@ -298,14 +298,14 @@ background: url('../assets/blob.svg');
         /* Auto layout */
 
 display: flex;
-flex-direction: column;
+flex-flow: column wrap;
 justify-content: center;
 align-items: center;
 padding: 80px 0px;
 
 
 max-width: 1050px;
-max-height: 583px;
+min-height: 583px;
 
 
         }
@@ -313,13 +313,13 @@ max-height: 583px;
 /* Auto layout */
 
 display: flex;
-flex-direction: row;
+flex-flow: row wrap;
 align-items: center;
 padding: 0px;
 
 /* position: static; */
-width: 1049px;
-height: 583px;
+max-width: 1049px;
+min-height: 583px;
 /* left: calc(50% - 1049px/2);
 top: 80px; */
 gap:30px;
@@ -331,13 +331,13 @@ gap:30px;
 /* col-md-6-text */
 
 display: flex;
-flex-direction: column;
+flex-flow: column wrap;
 align-items: center;
 padding: 0px;
 
 /* position: static; */
-width: 510px;
-height: 583px;
+max-width: 510px;
+/* height: 583px; */
 /* left: calc(50% - 510px/2 + 269.5px);
 top: 0px; */
 
@@ -346,8 +346,8 @@ top: 0px; */
 /* mockup */    
 
 /* position: static; */
-width: 471px;
-height: 583px;
+max-width: 471px;
+/* height: 583px; */
 /* left: 19.5px;
 top: 0px; */
 
@@ -355,8 +355,8 @@ top: 0px; */
                 }
                     .placeholder{
                         position: absolute;
-                        width: 236.2px;
-                        height: 504.27px;
+                        max-width: 236.2px;
+                        /* height: 504.27px; */
                         /* left: 236.4px;
                         top: 13.44px; */
                         
@@ -387,15 +387,16 @@ padding: 0px;
 justify-content: space-between;
 
 /* position: relative; */
-width: 509px;
-height: 342px;
+max-width: 509px;
+/* height: 342px; */
 gap: 35px;
             }
                 .header13-container-main-row-cta{
 /* cta */
 display: flex;
-flex-direction: row;
+flex-flow: row wrap;
 align-items: flex-start;
+justify-content: center;
 padding: 0px;
 gap:10px;
                 }
@@ -501,27 +502,23 @@ margin:0px;
             .headline-4{
                 /* h1 #headline.4 */
                 /* position: static; */
-                width: 509px;
-                height: 160px;
+                max-width: 509px;
+                /* height: 160px; */
                 left: 0px;
                 top: 0px;
                                
                 /* dark-background-color */
                 color:var(--text-color)
                 
-                
-                 
             }
     
-    
-
     .header-navbar-container{
 
 display:flex;
-flex-direction: row;
+flex-flow: row wrap;
 align-items: flex-start;
-justify-content: space-between;
-width: 1322px;
+justify-content: center;
+max-width: 1322px;
 height: 91px;
 gap:41px ;
 
@@ -535,17 +532,17 @@ align-items: center; */
         }
         .navbar-collapse{
             display: flex;
-            flex-direction: row;
+            flex-flow: row wrap;
             align-self:center;
-            justify-content: space-between;
+            justify-content: center;
             
-            width: 815px;
+            max-width: 815px;
             height: 58px;
             
             }
             .navbar-list{
 display: flex;
-flex-direction: row;
+flex-flow: row wrap;
 align-items: center;
 padding: 0px;
 gap:21px;
@@ -636,7 +633,7 @@ gap:41px;
         }
     .header-container{
         display: flex;
-        flex-direction: column;
+        flex-flow: column wrap;
         align-items: center;
         z-index: 2;
 
@@ -893,6 +890,7 @@ gap:41px;
     /* position: static; */
     width: 1440px;
     height: 1155px;
+    
     /* left: 0px;
     top: 3022px; */
     background-color: var(--light-gray-1);
@@ -992,7 +990,10 @@ gap:41px;
 /* 9.contact */
 .contact-5{
     /* position: static; */
-    width: 1440px;
+    max-width: 1440px;
+    max-height: 332px;
+    
+    width: 1440px; 
     height: 257px;
     /* left: 0px;
     top: 4177px; */
@@ -1049,7 +1050,7 @@ gap:41px;
 /* 10.footer */
 .footer-1{
     /* position: static; */
-    width: 1440px;
+    width: 1440px;    
     height: 414px;
     /* left: 0px;
     top: 4434px; */
@@ -1151,6 +1152,10 @@ gap:41px;
     .desktop{
         width:100vw;
         align-items: center;
+    }
+}
+@media (max-width: 424px){
+                    
     }
 }
 
