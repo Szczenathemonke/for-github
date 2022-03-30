@@ -9,8 +9,25 @@
 <body>
 <div class="desktop">
     <section class="header-13">
-        <div class="header-container">        
-            <div class="header-navbar-container">
+        <div class="header-container">
+            <!-- navbar w wersji mobile i desktop, zmieniają się przez media query -->
+            <div class="mobile-header-navbar-container">
+                <div class="mobile-row">
+                    <div class="navbar-brand">
+                        <h3 class="brand">BrandName</h3>
+                    </div>
+                    <img src="assets/icn search .icn-xs.svg" alt="search">
+                    <img src="assets/icn shopping-cart .icn-xs.svg" alt="shop">
+                    <img src="assets/icn menu .icn-xs.svg" alt="menu">                
+                </div>
+                <div class="mobile-col">
+                    <p class="mobile-menu">Home</p>
+                    <p class="mobile-menu">Product</p>
+                    <p class="mobile-menu">Pricing</p>
+                    <p class="mobile-menu">Contact</p>
+                </div>
+            </div>        
+            <div class="desktop-header-navbar-container">
                 <div class="navbar-brand">
                     <h3 class="brand">BrandName</h3>
                 </div>
@@ -62,11 +79,10 @@
                         <h1 class="headline-4">Your Financial Assistance</h1>                        
                 </div> 
                 <div class="header13-container-main-colmd6-img">
-                    <div class="header13-container-main-colmd6-mockup">    
-                        <img src="assets/mockup.png" alt="mockup">                  
-                        <!-- <img class="iphone-12--product-red-2" src="assets/iphone-12--product-red 2.svg" alt="iphone-12--product-red-2"> -->
-                        <!-- <img class="placeholder" src="assets/placeholder.svg" alt="placeholder">  -->
+                    <div class="mobile-mockup">    
+                        <img src="assets/mobile-mockup.svg" alt="mockup">               
                     </div>
+                    
                     
                 </div>             
             </div>

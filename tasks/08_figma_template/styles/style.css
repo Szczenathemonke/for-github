@@ -291,7 +291,6 @@ width: 100%;
 /* max-width: 1440px;
 min-height: 847px; */
 
-background: url('../assets/blob.svg');
 
     }
     .header13-container-main{
@@ -342,7 +341,8 @@ max-width: 510px;
 top: 0px; */
 
             }
-                .header13-container-main-colmd6-mockup{
+
+                .mobile-mockup{
 /* mockup */    
 
 /* position: static; */
@@ -509,10 +509,38 @@ margin:0px;
                 color:var(--text-color)
                 
             }
-    
-    .header-navbar-container{
+    .mobile-header-navbar-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap: 60px; 
+        width: 100%;
+        min-height: 532px;
+        background-color: #F7F7F7;       
 
-display:flex;
+    }
+    .mobile-row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        padding: 20px 0px 0px 0px;
+        width: 100%;
+    }
+    .mobile-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+        width: 100%;
+        
+
+    }
+    .desktop-header-navbar-container{
+
+display:none;
 flex-flow: row wrap;
 align-items: flex-start;
 justify-content: center;
@@ -989,10 +1017,10 @@ gap:41px;
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;        
         padding: 80px 0px;
-        gap:225px;
+        gap:25px;
         width: 100%;
     }
     .contact-colmd5{
@@ -1118,7 +1146,16 @@ gap:41px;
 /* fix - button text i formatowanie button (round/zwykly/outline)
         row colmd3 colmd4 zunifikować formatowanie - bez klas dla kazdej sekcji
         feature-selection zunifikować formatowanie - same */
+@media (min-width: 1024px){
+    .desktop-header-navbar-container{
+        display: flex;
+    }
+    .mobile-header-navbar-container{
+        display: none;
+    }
 
+
+}
 
 @media (min-width: 1441px){
     .desktop{
@@ -1126,8 +1163,6 @@ gap:41px;
         align-items: center;
     }
 }
-@media (max-width: 424px){
-                    
-    }
-}
+
+    
 
